@@ -58,11 +58,11 @@
  * Free: 0x7fa14a500010 -> 120 at wc_FreeRng:606
  */
 
-#include "wolfssl/wolfcrypt/settings.h"
-#include "wolfssl/wolfcrypt/types.h"
-#include "wolfssl/wolfcrypt/logging.h"
-#include "wolfssl/wolfcrypt/error-crypt.h"
-#include "wolfssl/wolfcrypt/memory.h"
+#include "../../wolfssl/wolfcrypt/settings.h"
+#include "../../wolfssl/wolfcrypt/types.h"
+#include "../../wolfssl/wolfcrypt/logging.h"
+#include "../../wolfssl/wolfcrypt/error-crypt.h"
+#include "../../wolfssl/wolfcrypt/memory.h"
 
 #if defined(WOLFSSL_TRACK_MEMORY) || defined(HAVE_STACK_SIZE) || \
     defined(HAVE_STACK_SIZE_VERBOSE)

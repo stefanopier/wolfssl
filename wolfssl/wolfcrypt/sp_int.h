@@ -30,9 +30,9 @@ This library provides single precision (SP) integer math functions.
 #ifndef WOLFSSL_LINUXKM
 #include <limits.h>
 #endif
-#include <wolfssl/wolfcrypt/settings.h>
-#include <wolfssl/wolfcrypt/types.h>
-#include <wolfssl/wolfcrypt/hash.h>
+#include <../../wolfssl/wolfcrypt/settings.h>
+#include <../../wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/hash.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -402,7 +402,7 @@ typedef struct sp_ecc_ctx {
 #endif
 
 #if defined(WOLFSSL_SP_MATH) || defined(WOLFSSL_SP_MATH_ALL)
-#include <wolfssl/wolfcrypt/random.h>
+#include <../../wolfssl/wolfcrypt/random.h>
 
 #ifndef SP_INT_BITS
     #ifdef SP_INT_DIGITS
@@ -957,7 +957,7 @@ typedef sp_int_digit mp_digit;
 
 
 /* Include the maths operations that are not implementation specific. */
-#include <wolfssl/wolfcrypt/wolfmath.h>
+#include <../../wolfssl/wolfcrypt/wolfmath.h>
 
 /*
  * Function prototypes.

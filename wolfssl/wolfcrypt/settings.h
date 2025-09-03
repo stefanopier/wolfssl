@@ -362,7 +362,7 @@
     #define WOLFSSL_DEBUG_CERTS
 #endif
 
-#include <wolfssl/wolfcrypt/visibility.h>
+#include <../../wolfssl/wolfcrypt/visibility.h>
 
 /*------------------------------------------------------------*/
 #if defined(WOLFSSL_FIPS_READY) || defined(WOLFSSL_FIPS_DEV)

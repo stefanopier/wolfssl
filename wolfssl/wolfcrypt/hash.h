@@ -26,16 +26,16 @@
 #ifndef WOLF_CRYPT_HASH_H
 #define WOLF_CRYPT_HASH_H
 
-#include <wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/types.h>
 
 #ifndef NO_MD5
-    #include <wolfssl/wolfcrypt/md5.h>
+    #include <../../wolfssl/wolfcrypt/md5.h>
 #endif
 #ifndef NO_SHA
-    #include <wolfssl/wolfcrypt/sha.h>
+    #include <../../wolfssl/wolfcrypt/sha.h>
 #endif
 #if defined(WOLFSSL_SHA224) || !defined(NO_SHA256)
-    #include <wolfssl/wolfcrypt/sha256.h>
+    #include <../../wolfssl/wolfcrypt/sha256.h>
 #endif
 #if defined(WOLFSSL_SHA384) || defined(WOLFSSL_SHA512)
     #include <wolfssl/wolfcrypt/sha512.h>
@@ -47,7 +47,7 @@
     #include <wolfssl/wolfcrypt/sha3.h>
 #endif
 #ifndef NO_MD4
-    #include <wolfssl/wolfcrypt/md4.h>
+    #include <../../wolfssl/wolfcrypt/md4.h>
 #endif
 #ifdef WOLFSSL_MD2
     #include <wolfssl/wolfcrypt/md2.h>
@@ -201,14 +201,14 @@ WOLFSSL_API int wc_HashDelete(wc_HashAlg *hash, wc_HashAlg **hash_p);
 #endif
 
 #ifndef NO_MD5
-#include <wolfssl/wolfcrypt/md5.h>
+#include <../../wolfssl/wolfcrypt/md5.h>
 WOLFSSL_API int wc_Md5Hash(const byte* data, word32 len, byte* hash);
 WOLFSSL_API int wc_Md5Hash_ex(const byte* data, word32 len, byte* hash,
     void* heap, int devId);
 #endif
 
 #ifndef NO_SHA
-#include <wolfssl/wolfcrypt/sha.h>
+#include <../../wolfssl/wolfcrypt/sha.h>
 WOLFSSL_API int wc_ShaHash(const byte* data, word32 len, byte* hash);
 WOLFSSL_API int wc_ShaHash_ex(const byte* data, word32 len, byte* hash,
     void* heap, int devId);
@@ -222,7 +222,7 @@ WOLFSSL_API int wc_Sha224Hash_ex(const byte* data, word32 len, byte* hash,
 #endif /* defined(WOLFSSL_SHA224) */
 
 #ifndef NO_SHA256
-#include <wolfssl/wolfcrypt/sha256.h>
+#include <../../wolfssl/wolfcrypt/sha256.h>
 WOLFSSL_API int wc_Sha256Hash(const byte* data, word32 len, byte* hash);
 WOLFSSL_API int wc_Sha256Hash_ex(const byte* data, word32 len, byte* hash,
     void* heap, int devId);

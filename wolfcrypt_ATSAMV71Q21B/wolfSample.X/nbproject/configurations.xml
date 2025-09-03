@@ -234,7 +234,6 @@
         <itemPath>../../wolfssl/wolfcrypt/sp_int.h</itemPath>
         <itemPath>../../wolfssl/wolfcrypt/sphincs.h</itemPath>
         <itemPath>../../wolfssl/wolfcrypt/srp.h</itemPath>
-        <itemPath>../../wolfssl/wolfcrypt/tfm.h</itemPath>
         <itemPath>../../wolfssl/wolfcrypt/types.h</itemPath>
         <itemPath>../../wolfssl/wolfcrypt/visibility.h</itemPath>
         <itemPath>../../wolfssl/wolfcrypt/wc_encrypt.h</itemPath>
@@ -323,7 +322,7 @@
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="default" type="2">
+    <conf name="default" type="3">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>ATSAMV71Q21B</targetDevice>
@@ -403,7 +402,8 @@
         <property key="place-data-into-section" value="true"/>
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
-        <property key="preprocessor-macros" value=""/>
+        <property key="preprocessor-macros"
+                  value="WOLFSSL_NO_OPTIONS_H;WOLFSSL_USER_SETTINGS;SINGLE_THREADED;WOLFSSL_SP_MATH"/>
         <property key="scalar-model" value="default"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
@@ -637,6 +637,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="400000-5fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Projects/Stardome MCU/MPLAB Projects/FORK/wolfssl/wolfcrypt_ATSAMV71Q21B/wolfSample.X/debug/default/wolfSample_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

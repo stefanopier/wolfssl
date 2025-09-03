@@ -34,7 +34,7 @@ that can be serialized and deserialized in a cross-platform way.
 #ifndef WOLF_CRYPT_ASN_H
 #define WOLF_CRYPT_ASN_H
 
-#include <wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/types.h>
 
 #if !defined(NO_ASN) || !defined(NO_PWDBASED)
 
@@ -42,14 +42,14 @@ that can be serialized and deserialized in a cross-platform way.
     #define NO_ASN_TIME /* backwards compatibility with NO_TIME_H */
 #endif
 
-#include <wolfssl/wolfcrypt/wolfmath.h>
+#include <../../wolfssl/wolfcrypt/wolfmath.h>
 
 #ifdef WOLFSSL_ASYNC_CRYPT
     #include <wolfssl/wolfcrypt/async.h>
 #endif
 
 #ifndef NO_DH
-    #include <wolfssl/wolfcrypt/dh.h>
+    #include <../../wolfssl/wolfcrypt/dh.h>
 #endif
 #ifndef NO_DSA
     #include <wolfssl/wolfcrypt/dsa.h>

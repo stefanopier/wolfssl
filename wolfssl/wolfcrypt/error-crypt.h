@@ -31,7 +31,7 @@ the error status.
 #ifndef WOLF_CRYPT_ERROR_H
 #define WOLF_CRYPT_ERROR_H
 
-#include <wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/types.h>
 
 #ifdef __cplusplus
     extern "C" {

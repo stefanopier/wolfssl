@@ -30,8 +30,8 @@
 #include "app.h"
 #include "definitions.h"
 
-#include <wolfssl/wolfcrypt/error-crypt.h>
-#include <wolfssl/wolfcrypt/logging.h>
+#include <../../wolfssl/wolfcrypt/error-crypt.h>
+#include <../../wolfssl/wolfcrypt/logging.h>
 
 #include "test.h"
 #include "benchmark.h"

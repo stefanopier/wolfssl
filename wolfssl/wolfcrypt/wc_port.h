@@ -26,8 +26,8 @@
 #ifndef WOLF_CRYPT_PORT_H
 #define WOLF_CRYPT_PORT_H
 
-#include <wolfssl/wolfcrypt/settings.h>
-#include <wolfssl/wolfcrypt/visibility.h>
+#include <../../wolfssl/wolfcrypt/settings.h>
+#include <../../wolfssl/wolfcrypt/visibility.h>
 
 #ifdef __cplusplus
     extern "C" {

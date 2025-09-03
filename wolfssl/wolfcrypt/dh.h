@@ -26,7 +26,7 @@
 #ifndef WOLF_CRYPT_DH_H
 #define WOLF_CRYPT_DH_H
 
-#include <wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/types.h>
 
 #ifndef NO_DH
 
@@ -34,8 +34,8 @@
     #include <wolfssl/wolfcrypt/fips.h>
 #endif /* HAVE_FIPS_VERSION >= 2 */
 
-#include <wolfssl/wolfcrypt/wolfmath.h>
-#include <wolfssl/wolfcrypt/random.h>
+#include <../../wolfssl/wolfcrypt/wolfmath.h>
+#include <../../wolfssl/wolfcrypt/random.h>
 
 #ifdef WOLFSSL_KCAPI_DH
     #include <wolfssl/wolfcrypt/port/kcapi/kcapi_dh.h>

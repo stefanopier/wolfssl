@@ -132,8 +132,8 @@
 #ifndef WOLFSSL_LOGGING_H
 #define WOLFSSL_LOGGING_H
 
-#include <wolfssl/wolfcrypt/types.h>
-#include <wolfssl/wolfcrypt/error-crypt.h>
+#include <../../wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/error-crypt.h>
 
 #ifdef __cplusplus
     extern "C" {

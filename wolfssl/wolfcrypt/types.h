@@ -31,9 +31,9 @@ decouple library dependencies with standard string, memory and so on.
 #ifndef WOLF_CRYPT_TYPES_H
 #define WOLF_CRYPT_TYPES_H
 
-#include <wolfssl/wolfcrypt/settings.h>
-#include <wolfssl/wolfcrypt/wc_port.h>
-#include <wolfssl/wolfcrypt/oid_sum.h>
+#include <../../wolfssl/wolfcrypt/settings.h>
+#include <../../wolfssl/wolfcrypt/wc_port.h>
+#include <../../wolfssl/wolfcrypt/oid_sum.h>
 
 #if defined(EXTERNAL_OPTS_OPENVPN) && defined(BUILDING_WOLFSSL)
     #error EXTERNAL_OPTS_OPENVPN should not be defined in compiled wolfssl \
@@ -588,7 +588,7 @@ enum {
         && !defined(WOLFSSL_LEANPSK) && !defined(WOLFSSL_uITRON4)
     /* default C runtime, can install different routines at runtime via cbs */
     #ifndef WOLFSSL_MEMORY_H
-        #include <wolfssl/wolfcrypt/memory.h>
+        #include <../../wolfssl/wolfcrypt/memory.h>
     #endif
     #ifdef WOLFSSL_STATIC_MEMORY
         #ifdef WOLFSSL_DEBUG_MEMORY
@@ -652,7 +652,7 @@ enum {
     #error WOLFSSL_SMALL_STACK requires constructors.
 #endif
 
-#include <wolfssl/wolfcrypt/memory.h>
+#include <../../wolfssl/wolfcrypt/memory.h>
 
 /* declare/free variable handling for async and smallstack */
 #ifndef WC_ALLOC_DO_ON_FAILURE

@@ -31,7 +31,7 @@ This library provides big integer math functions.
     extern "C" {
 #endif
 
-#include <wolfssl/wolfcrypt/types.h>
+#include <../../wolfssl/wolfcrypt/types.h>
 
 #ifdef WOLFSSL_PUBLIC_MP
     #define MP_API   WOLFSSL_API
@@ -48,7 +48,7 @@ This library provides big integer math functions.
         #error Conflicting MPI settings.
     #endif
 #elif defined(WOLFSSL_SP_MATH_ALL) || defined(WOLFSSL_SP_MATH)
-    #include <wolfssl/wolfcrypt/sp_int.h>
+    #include <../../wolfssl/wolfcrypt/sp_int.h>
 #elif defined(USE_FAST_MATH)
     #include <wolfssl/wolfcrypt/tfm.h>
 #elif defined(USE_INTEGER_HEAP_MATH)

@@ -30,7 +30,7 @@ masking and clearing memory logic.
     #ifdef HAVE_CONFIG_H
         #include <config.h>
     #endif
-    #include <wolfssl/wolfcrypt/settings.h>
+    #include <../../wolfssl/wolfcrypt/settings.h>
 #else
     #include <wolfssl/wolfcrypt/libwolfssl_sources.h>
 #endif
@@ -38,7 +38,7 @@ masking and clearing memory logic.
 #ifndef WOLF_CRYPT_MISC_C
 #define WOLF_CRYPT_MISC_C
 
-#include <wolfssl/wolfcrypt/misc.h>
+#include <../../wolfssl/wolfcrypt/misc.h>
 
 /* inlining these functions is a huge speed increase and a small size decrease,
    because the functions are smaller than function call setup/cleanup, e.g.,
@@ -1294,7 +1294,7 @@ WC_MISC_STATIC WC_INLINE word32 MakeWordFromHash(const byte* hashID)
 #if !defined(WOLFCRYPT_ONLY) && !defined(NO_HASH_WRAPPER) && \
     (!defined(NO_SESSION_CACHE) || defined(HAVE_SESSION_TICKET))
 
-#include <wolfssl/wolfcrypt/hash.h>
+#include <../../wolfssl/wolfcrypt/hash.h>
 
 /* some session IDs aren't random after all, let's make them random */
 WC_MISC_STATIC WC_INLINE word32 HashObject(const byte* o, word32 len,
